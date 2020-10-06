@@ -1,3 +1,4 @@
 language: python
-install: pip install -r requirements.txt
-script: python3 test_postinumerot.py
+script: pytest test_postinumerot.py
+
+
