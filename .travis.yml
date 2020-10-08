@@ -1,4 +1,8 @@
 language: python
-script: pytest test_postinumerot.py
+install: pip3 install coverage
+script: 
+-pytest test_postinumerot.py
+-coverage run -m pytest test_postinumerot.py
+-coverage report -m
 
 
